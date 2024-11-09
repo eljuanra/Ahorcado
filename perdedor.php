@@ -13,7 +13,7 @@
     <title>¡Has perdido!</title>
 </head>
 <body>
-    <div class="component">
+    <div class="container">
         <h1>¡Lástima!</h1>
         <p> Has perdido</p>
         <p><a href="./index.php"><button>Jugar de nuevo</button></a></p>
