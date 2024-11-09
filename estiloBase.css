@@ -17,3 +17,10 @@ h1 {
     color:orangered;
 
 }
+
+p {
+    position: relative;
+    margin-left: 30%;
+    padding: 2%;
+}
+
