@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color:beige;
+    color:blue;
+    padding: 5%;
+
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-top: 5%;
+    color:orangered;
+
+}

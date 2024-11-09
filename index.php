@@ -54,17 +54,28 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">    
     <title>Ahorcado</title>
+    <link href="estiloBase.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Juego del Ahorcado</h1>
-    <p>Palabra secreta: <?php echo $_SESSION['letras_acertadas']; ?></p>
-    <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
-    <form method="post">
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        <p>Palabra secreta: <?php echo $_SESSION['letras_acertadas']; ?></p>
+        <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
+        <form method="post">
         <label for="letra">Introduce una letra:</label>
         <input type="text" name="letra" id="letra" maxlength="1" required>
         <button type="submit">Adivinar</button>
-    </form>
-    <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
+        </form>
+        <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>
