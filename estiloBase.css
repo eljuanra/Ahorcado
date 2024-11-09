@@ -1,5 +1,6 @@
 body {
     background-color: aqua;
+    margin-bottom: 5%;
 }
 
 .container {
@@ -22,5 +23,15 @@ p {
     position: relative;
     margin-left: 30%;
     padding: 2%;
+}
+
+label {
+    position: relative;
+    margin-left: 30%;
+}
+
+input {
+    position: relative;
+    margin-left: 30%;
 }
 

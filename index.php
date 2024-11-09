@@ -66,7 +66,7 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
         <p>Palabra secreta: <?php echo $_SESSION['letras_acertadas']; ?></p>
         <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
         <form method="post">
-        <label for="letra">Introduce una letra:</label>
+        <label for="letra">Introduce una letra:</label><br>
         <input type="text" name="letra" id="letra" maxlength="1" required>
         <button type="submit">Adivinar</button>
         </form>
